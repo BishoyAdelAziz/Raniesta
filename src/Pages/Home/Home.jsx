@@ -1,5 +1,9 @@
 import "./Home.css";
+import { Gym_Photos } from "../../assets/Assets";
+import { useEffect } from "react";
+import { useState } from "react";
 const Home = () => {
+  const ChangePhoto = () => {};
   return (
     <div className="Home">
       <div className="Welcome-Message">
@@ -20,7 +24,9 @@ const Home = () => {
                 fitness at <span className="Resort-name">Raniesta Resort</span>.
               </p>
             </div>
-            <div className="Service-Photos"></div>
+            <div className="Service-Photos">
+              <img src={Gym_Photos[0].Photo} alt="" />
+            </div>
           </div>
         </div>
       </section>
