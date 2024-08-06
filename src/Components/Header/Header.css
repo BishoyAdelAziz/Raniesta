@@ -43,6 +43,7 @@ hr {
 @media (max-width: 1024px) {
   header .Nav-Btn {
     display: block;
+    font-size: 1.5rem;
   }
   header nav {
     position: fixed;
