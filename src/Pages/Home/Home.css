@@ -18,16 +18,28 @@
   font-size: 1.5rem;
   transition: 1s;
   font-weight: 800;
+  margin-bottom: 20vh;
 }
 
 .Home .Welcome-Message h3 span {
   font-family: "Playwrite CL", cursive;
   color: tomato;
 }
-.Home .Welcome-Message p {
-  display: block;
+
+section {
+  width: 90%;
+  margin: auto;
   color: white;
-  width: 70%;
-  margin: 0 auto;
-  font-size: 1rem;
+}
+section h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+.Services-Container {
+  display: flex;
+  flex-direction: column;
+}
+.service {
+  display: flex;
+  justify-content: space-evenly;
 }
