@@ -25,7 +25,7 @@ const Home = () => {
               </p>
             </div>
             <div className="Service-Photos">
-              <img src={Gym_Photos[0].Photo} alt="" />
+              <img src={Gym_Photos[0].Photo} alt="Gym Photos" />
             </div>
           </div>
         </div>
