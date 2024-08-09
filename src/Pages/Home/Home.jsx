@@ -1,9 +1,7 @@
 import "./Home.css";
 import { Gym_Photos } from "../../assets/Assets";
-import { useEffect } from "react";
-import { useState } from "react";
+
 const Home = () => {
-  const ChangePhoto = () => {};
   return (
     <div className="Home">
       <div className="Welcome-Message">
