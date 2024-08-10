@@ -12,11 +12,17 @@ const Header = () => {
     <header>
       <h1>Raniesta Resort</h1>
       <nav ref={navRef}>
-        <Link to="/">Home</Link>
+        <Link onClick={ShowNavBar} to="/">
+          Home
+        </Link>
         <hr />
-        <Link to="/about">About</Link>
+        <Link onClick={ShowNavBar} to="/about">
+          About
+        </Link>
         <hr />
-        <Link to="/booking">Book Now</Link>
+        <Link onClick={ShowNavBar} to="/booking">
+          Book Now
+        </Link>
         <hr />
         <button className="Log-in">Log-in</button>
         <div className="Nav-Btn Close-Btn">
