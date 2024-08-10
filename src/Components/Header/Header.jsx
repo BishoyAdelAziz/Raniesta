@@ -3,11 +3,12 @@ import { FiAlignRight } from "react-icons/fi";
 import { TfiClose } from "react-icons/tfi";
 import { useRef } from "react";
 import "./Header.css";
-const Header = () => {
+const Header = ({ setShowLogin }) => {
   const navRef = useRef(null);
   const ShowNavBar = () => {
     navRef.current.classList.toggle("responsive-nav");
   };
+
   return (
     <header>
       <h1>Raniesta Resort</h1>
@@ -24,7 +25,12 @@ const Header = () => {
           Book Now
         </Link>
         <hr />
-        <button className="Log-in">Log-in</button>
+        <button
+          onClick={() => setShowLogin((prev) => !prev)}
+          className="Log-in"
+        >
+          Log-in
+        </button>
         <div className="Nav-Btn Close-Btn">
           <TfiClose onClick={ShowNavBar} />
         </div>
