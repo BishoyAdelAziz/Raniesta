@@ -1,9 +1,11 @@
-import { Children, createContext } from "react";
+import { createContext } from "react";
 
 export const AppContext = createContext();
 const Server = {};
-const ContextProvider = () => {
-  return <AppContext.Provider value={Server}>{Children}</AppContext.Provider>;
+const ContextProvider = (props) => {
+  return (
+    <AppContext.Provider value={Server}>{props.children}</AppContext.Provider>
+  );
 };
 
 export default ContextProvider;

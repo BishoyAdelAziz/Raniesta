@@ -10,6 +10,7 @@ header {
 header h1 {
   font-family: "Playwrite CL", cursive;
   color: tomato;
+  font-size: 1.5rem;
 }
 nav a {
   margin: 0 2rem;
@@ -27,7 +28,7 @@ nav button {
   background-color: tomato;
   padding: 1rem;
   border-radius: 20px;
-  transition: 1.5s;
+  transition: 1s;
   font-size: 1rem;
 }
 nav button:hover {
@@ -57,7 +58,7 @@ hr {
     justify-content: space-evenly;
     gap: 1.5rem;
     background-color: rgba(0, 0, 0, 0.9);
-    transition: 1.5s;
+    transition: 1s;
     transform: translateX(100vw);
   }
   nav a:hover {
