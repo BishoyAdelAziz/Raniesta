@@ -6,16 +6,18 @@ import About from "./Pages/About/About";
 import Booking from "./Pages/Booking/Booking";
 function App() {
   return (
-    <div className="App">
+    <>
       <BrowserRouter>
-        <Header />
-        <Home />
-        <Routes>
-          <Route path={"/about"} element={<About />} />
-          <Route path={"/booking"} element={<Booking />} />
-        </Routes>
+        <div className="App">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/booking" element={<Booking />} />
+          </Routes>
+        </div>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 
