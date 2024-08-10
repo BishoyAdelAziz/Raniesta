@@ -3,6 +3,8 @@ import { FiAlignRight } from "react-icons/fi";
 import { TfiClose } from "react-icons/tfi";
 import { useRef } from "react";
 import "./Header.css";
+import About from "../../Pages/About/About";
+import Booking from "../../Pages/Booking/Booking";
 const Header = () => {
   const navRef = useRef(null);
   const ShowNavBar = () => {
@@ -14,9 +16,13 @@ const Header = () => {
       <nav ref={navRef}>
         <Link to={"/"}>Home</Link>
         <hr />
-        <Link to={"/about"}>About</Link>
+        <Link to={"/about"} element={<About />}>
+          About
+        </Link>
         <hr />
-        <Link to={"Booking"}>Book Now</Link>
+        <Link to={"Booking"} element={<Booking />}>
+          Book Now
+        </Link>
         <hr />
         <button className="Log-in">Log-in</button>
         <div className="Nav-Btn Close-Btn">
