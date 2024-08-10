@@ -1,5 +1,5 @@
 import "./Home.css";
-import { Gym_Photos } from "../../assets/Assets";
+import { Gym_Photos, Golf_Photos } from "../../assets/Assets";
 
 const Home = () => {
   return (
@@ -24,6 +24,19 @@ const Home = () => {
             </div>
             <div className="Service-Photos">
               <img src={Gym_Photos[0].Photo} alt="Gym Photos" />
+            </div>
+          </div>
+          <div className="service">
+            <div className="Service-Content">
+              <h5>GOLF</h5>
+              <p>
+                Experience the invigorating benefits of golf at Raniesta, where
+                lush landscapes enhance air quality, promoting health and
+                wellness through this timeless sport.
+              </p>
+            </div>
+            <div className="Service-Photos">
+              <img src={Golf_Photos[0].Photo} alt="Gym Photos" />
             </div>
           </div>
         </div>
