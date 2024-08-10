@@ -9,7 +9,8 @@ function App() {
         <Header />
         <Home />
         <Routes>
-          <Route></Route>
+          <Route path={"/about"} />
+          <Route path={"/booking"} />
         </Routes>
       </BrowserRouter>
     </div>
