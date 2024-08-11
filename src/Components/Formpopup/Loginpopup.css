@@ -53,3 +53,9 @@ form p span:hover {
   color: white;
   border-bottom: 1px solid white;
 }
+form input::placeholder {
+  opacity: 0.8;
+}
+form input:focus::placeholder {
+  opacity: 1;
+}
