@@ -4,14 +4,15 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Booking from "./Pages/Booking/Booking";
-import { useState } from "react";
+import { useContext } from "react";
 import Loginpopup from "./Components/Formpopup/Loginpopup";
+import { AppContext } from "./Context/AppContext";
 function App() {
-  const [Showlogin, setShowLogin] = useState(false);
+  const { setShowLogin, ShowLogin } = useContext(AppContext);
   return (
     <>
       <BrowserRouter>
-        {Showlogin ? <Loginpopup setShowLogin={setShowLogin} /> : <></>}
+        {ShowLogin ? <Loginpopup setShowLogin={setShowLogin} /> : <></>}
         <div className="App">
           <Header setShowLogin={setShowLogin} />
           <Routes>

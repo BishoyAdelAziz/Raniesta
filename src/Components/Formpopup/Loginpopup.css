@@ -8,4 +8,16 @@
 }
 .login-popup-container {
   place-self: center;
+  color: rgb(24, 5, 5);
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 3rem;
+}
+.Login-popup-title {
+  color: white;
+  text-align: center;
 }

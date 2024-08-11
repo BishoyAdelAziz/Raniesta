@@ -1,7 +1,11 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 export const AppContext = createContext();
-const Server = {};
+const [ShowLogin, setShowLogin] = useState(false);
+const Server = {
+  ShowLogin,
+  setShowLogin,
+};
 const ContextProvider = (props) => {
   return (
     <AppContext.Provider value={Server}>{props.children}</AppContext.Provider>

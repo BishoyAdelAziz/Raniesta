@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import { FiAlignRight } from "react-icons/fi";
 import { TfiClose } from "react-icons/tfi";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import "./Header.css";
-const Header = ({ setShowLogin }) => {
+import { AppContext } from "../../Context/AppContext";
+const Header = () => {
+  const { setShowLogin } = useContext(AppContext);
   const navRef = useRef(null);
   const ShowNavBar = () => {
     navRef.current.classList.toggle("responsive-nav");
   };
-
   return (
     <header>
       <h1>Raniesta Resort</h1>
