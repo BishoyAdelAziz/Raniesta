@@ -14,6 +14,7 @@ const Loginpopup = () => {
           onClick={() => {
             setShowLogin((prev) => !prev);
           }}
+          className="close-btn"
         />
         <label htmlFor="E-mail">Your E-mail: </label>
         <input type="email" name="E-mail" placeholder="Your E-mail" required />
