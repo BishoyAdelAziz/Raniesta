@@ -9,15 +9,47 @@
 .login-popup-container {
   place-self: center;
   color: rgb(24, 5, 5);
-  display: flex;
-  flex-direction: column;
-  gap: 3vh;
-  align-items: center;
-  justify-content: center;
-  background-color: aliceblue;
+  background-color: tomato;
   padding: 3rem;
 }
 .Login-popup-title {
-  color: white;
   text-align: center;
+}
+form {
+  display: grid;
+  gap: 5vh;
+}
+form input {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+form button {
+  padding: 1rem;
+  width: 40%;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+form button:hover {
+  background-color: white;
+  color: black;
+}
+form p {
+  text-transform: capitalize;
+  color: white;
+}
+form p span {
+  color: black;
+  border-bottom: 1px solid black;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+form p span:hover {
+  color: white;
+  border-bottom: 1px solid white;
 }

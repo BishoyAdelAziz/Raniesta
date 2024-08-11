@@ -15,11 +15,11 @@ const Loginpopup = () => {
             setShowLogin((prev) => !prev);
           }}
         />
-        <label htmlFor="E-mail">Your E-mail</label>
-        <input type="text" name="E-mail" placeholder="Your E-mail" required />
-        <label htmlFor="Password">Your Password</label>
+        <label htmlFor="E-mail">Your E-mail: </label>
+        <input type="email" name="E-mail" placeholder="Your E-mail" required />
+        <label htmlFor="Password">Your Password :</label>
         <input type="password" placeholder="Password" required />
-        <button>Sign-in</button>
+        <button type="submit">Sign-in</button>
         <p>
           you dont have account ? <span>SignUp</span>
         </p>
