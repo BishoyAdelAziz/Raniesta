@@ -60,6 +60,7 @@ hr {
     background-color: rgba(0, 0, 0, 0.9);
     transition: 1s;
     transform: translateX(100vw);
+    z-index: 1;
   }
   nav a:hover {
     border: none;
