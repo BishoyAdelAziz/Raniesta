@@ -1,0 +1,89 @@
+.Login-popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: #00000090;
+  display: grid;
+}
+.login-popup-container {
+  place-self: center;
+  color: rgb(24, 5, 5);
+  background-color: tomato;
+  padding: 3rem;
+  animation: fadein 1s;
+  position: relative;
+}
+.Login-popup-title {
+  text-align: center;
+}
+.Signup-popup-container {
+  place-self: center;
+  color: rgb(24, 5, 5);
+  background-color: tomato;
+  padding: 3em;
+  animation: fadein 1s;
+  position: relative;
+  max-height: 100vh;
+}
+.Signup-popup-title {
+  text-align: center;
+}
+form .close-btn {
+  position: absolute;
+  right: 2vw;
+  top: 2vh;
+  cursor: pointer;
+}
+form {
+  display: grid;
+  gap: 3vh;
+}
+form input {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+form button {
+  padding: 1rem;
+  width: 40%;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+form button:hover {
+  background-color: white;
+  color: black;
+}
+form p {
+  text-transform: capitalize;
+  color: white;
+}
+form p span {
+  color: black;
+  border-bottom: 1px solid black;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+form p span:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+form input::placeholder {
+  opacity: 0.8;
+}
+form input:focus::placeholder {
+  opacity: 1;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
