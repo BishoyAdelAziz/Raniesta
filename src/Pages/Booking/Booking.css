@@ -1,0 +1,30 @@
+.Booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh;
+}
+.Filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  font-size: 1.5rem;
+}
+.Booking-Entry {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+.Rooms {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  align-items: center;
+  justify-content: center;
+}
