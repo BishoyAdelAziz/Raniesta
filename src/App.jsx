@@ -5,10 +5,10 @@ import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Booking from "./Pages/Booking/Booking";
 import { useContext } from "react";
-import Loginpopup from "./Components/Formpopup/Loginpopup";
+import Loginpopup from "./Components/Formpopup/Login/Loginpopup";
 import { AppContext } from "./Context/AppContext";
 function App() {
-  const { setShowLogin, ShowLogin } = useContext(AppContext);
+  const { ShowLogin, setShowLogin } = useContext(AppContext);
   return (
     <>
       <BrowserRouter>
