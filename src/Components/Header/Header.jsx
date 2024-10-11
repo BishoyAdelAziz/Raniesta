@@ -27,7 +27,10 @@ const Header = () => {
         </Link>
         <hr />
         <button
-          onClick={() => setShowLogin((prev) => !prev)}
+          onClick={() => {
+            setShowLogin((prev) => !prev);
+            ShowNavBar();
+          }}
           className="Log-in"
         >
           Log-in
