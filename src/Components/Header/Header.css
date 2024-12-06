@@ -83,3 +83,6 @@ hr {
     font-size: 1.5rem;
   }
 }
+.active {
+  color: yellow;
+}

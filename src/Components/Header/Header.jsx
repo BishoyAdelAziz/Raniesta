@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FiAlignRight } from "react-icons/fi";
 import { TfiClose } from "react-icons/tfi";
 import { useContext, useRef } from "react";
@@ -14,17 +14,29 @@ const Header = () => {
     <header>
       <h1>Raniesta Resort</h1>
       <nav ref={navRef}>
-        <Link onClick={ShowNavBar} to="/">
+        <NavLink
+          className={({ isActive }) => (isActive ? "activ e" : "")}
+          onClick={ShowNavBar}
+          to="/"
+        >
           Home
-        </Link>
+        </NavLink>
         <hr />
-        <Link onClick={ShowNavBar} to="/about">
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "")}
+          onClick={ShowNavBar}
+          to="/about"
+        >
           About
-        </Link>
+        </NavLink>
         <hr />
-        <Link onClick={ShowNavBar} to="/booking">
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "")}
+          onClick={ShowNavBar}
+          to="/booking"
+        >
           Book Now
-        </Link>
+        </NavLink>
         <hr />
         <button
           onClick={() => {
