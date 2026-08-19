@@ -1,14 +1,14 @@
-name: First Workflow
+name: First-Workflow
 
 on:
   push:
-    branches: 
-    - main
+    branches:
+      - main
 
-  jobs:
+jobs:
   example-job:
-     required run-on: ubunto-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Print A Welcome Message
-      run: echo "welocme to our first Github Actions Workflow"
+        run: echo "Welcome to our first GitHub Actions Workflow"
