@@ -14,4 +14,4 @@ jobs:
         run: echo "Welcome to our first GitHub Actions Workflow
         
       - name: Checkout Repository
-        uses: action/checkout@v7.0.1
+        uses: actions/checkout@v7.0.1
