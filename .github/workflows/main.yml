@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Print A Welcome Message
-        run: echo "Welcome to our first GitHub Actions Workflow
+        run: echo "Welcome to our first GitHub Actions Workflow"
         
       - name: Checkout Repository
         uses: actions/checkout@v7.0.1
